@@ -1,0 +1,172 @@
+@mixin wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    // border: .5px solid black;
+}
+
+@mixin h2_t {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@mixin p_t {
+    font-size: 1.2rem;
+    text-indent: 3rem;
+    line-height: 2rem;
+}
+
+body {
+    header {
+        @include wrapper;
+        justify-content: center;
+        align-items: center;
+
+        > div {
+            &.box-logo {
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid black;
+                padding: 0 20px;
+
+                > img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                > div {
+                    &.text-logo {
+                        text-align: center;
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &.title {
+                text-align: center;
+                margin-top: 3rem;
+
+                > h2 {
+                    font-size: 1.2rem;
+
+                    &:not(:nth-child(3)){
+                        font-weight: 500;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 8rem;
+                    }
+                }
+            }
+
+            &.stud {
+                margin-top: 8rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                > div {
+                    font-size: 1.2rem;
+                    &:nth-child(2) {
+                        margin-top: 3rem;
+                    }
+                }
+            }
+
+            &.date {
+                text-align: center;
+                margin-top: 6rem;
+
+                > p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    main {
+        @include wrapper;
+
+        > div {
+            &.content {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+
+                > a {
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+                    color: blue;
+                }
+            }
+
+            &.reductions {
+                padding: 2rem;
+                
+                > h2 {
+                    font-size: 1.3rem;
+                }
+
+                > p {
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                }
+            }
+
+            &.introduction {
+                padding: 2rem;
+
+                > h2 {
+                    @include h2_t;
+                }
+
+                > p {
+                    @include p_t;
+                }
+            }
+
+            &.first, &.second, &.third, &.fourth, &.fifth, &.conclusion, &.lit {
+                padding: 2rem;
+
+                > h2 {
+                    @include h2_t;
+                }
+
+                > p {
+                    @include p_t;
+
+                    &.list {
+                        text-indent: 0;
+                        margin-left: 5rem;
+                    }
+
+                    &.formular {
+                        text-align: center;
+                        text-indent: 0;
+                    }
+
+                    > a {
+                        color: blue;
+                    }
+                }
+
+                > div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    > img {
+                        width: 400px;
+                        height: auto;
+                    }
+
+                    > p {
+                        font-size: 1.2rem;
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

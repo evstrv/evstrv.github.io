@@ -1,0 +1,186 @@
+body header {
+  max-width: 800px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header > div.box-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid black;
+  padding: 0 20px;
+}
+
+body header > div.box-logo > img {
+  width: 100px;
+  height: 100px;
+}
+
+body header > div.box-logo > div.text-logo {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+body header > div.title {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+body header > div.title > h2 {
+  font-size: 1.2rem;
+}
+
+body header > div.title > h2:not(:nth-child(3)) {
+  font-weight: 500;
+}
+
+body header > div.title > h2:nth-child(3) {
+  margin-top: 8rem;
+}
+
+body header > div.stud {
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body header > div.stud > div {
+  font-size: 1.2rem;
+}
+
+body header > div.stud > div:nth-child(2) {
+  margin-top: 3rem;
+}
+
+body header > div.date {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+body header > div.date > p {
+  font-size: 1.2rem;
+}
+
+body main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+body main > div.content {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main > div.content > a {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: blue;
+}
+
+body main > div.reductions {
+  padding: 2rem;
+}
+
+body main > div.reductions > h2 {
+  font-size: 1.3rem;
+}
+
+body main > div.reductions > p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+body main > div.introduction {
+  padding: 2rem;
+}
+
+body main > div.introduction > h2 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+body main > div.introduction > p {
+  font-size: 1.2rem;
+  text-indent: 3rem;
+  line-height: 2rem;
+}
+
+body main > div.first, body main > div.second, body main > div.third, body main > div.fourth, body main > div.fifth, body main > div.conclusion, body main > div.lit {
+  padding: 2rem;
+}
+
+body main > div.first > h2, body main > div.second > h2, body main > div.third > h2, body main > div.fourth > h2, body main > div.fifth > h2, body main > div.conclusion > h2, body main > div.lit > h2 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+body main > div.first > p, body main > div.second > p, body main > div.third > p, body main > div.fourth > p, body main > div.fifth > p, body main > div.conclusion > p, body main > div.lit > p {
+  font-size: 1.2rem;
+  text-indent: 3rem;
+  line-height: 2rem;
+}
+
+body main > div.first > p.list, body main > div.second > p.list, body main > div.third > p.list, body main > div.fourth > p.list, body main > div.fifth > p.list, body main > div.conclusion > p.list, body main > div.lit > p.list {
+  text-indent: 0;
+  margin-left: 5rem;
+}
+
+body main > div.first > p.formular, body main > div.second > p.formular, body main > div.third > p.formular, body main > div.fourth > p.formular, body main > div.fifth > p.formular, body main > div.conclusion > p.formular, body main > div.lit > p.formular {
+  text-align: center;
+  text-indent: 0;
+}
+
+body main > div.first > p > a, body main > div.second > p > a, body main > div.third > p > a, body main > div.fourth > p > a, body main > div.fifth > p > a, body main > div.conclusion > p > a, body main > div.lit > p > a {
+  color: blue;
+}
+
+body main > div.first > div, body main > div.second > div, body main > div.third > div, body main > div.fourth > div, body main > div.fifth > div, body main > div.conclusion > div, body main > div.lit > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main > div.first > div > img, body main > div.second > div > img, body main > div.third > div > img, body main > div.fourth > div > img, body main > div.fifth > div > img, body main > div.conclusion > div > img, body main > div.lit > div > img {
+  width: 400px;
+  height: auto;
+}
+
+body main > div.first > div > p, body main > div.second > div > p, body main > div.third > div > p, body main > div.fourth > div > p, body main > div.fifth > div > p, body main > div.conclusion > div > p, body main > div.lit > div > p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
