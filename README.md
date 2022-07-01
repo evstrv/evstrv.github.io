@@ -1,0 +1,1 @@
+This site was built using [GitHub Pages](https://evstrv.github.io/) [![pages-build-deployment](https://github.com/evstrv/evstrv.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/evstrv/evstrv.github.io/actions/workflows/pages/pages-build-deployment).
