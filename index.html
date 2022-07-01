@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Default</title>
+    <title>All</title>
+    <style>
+        main {
+            font-family: system-ui;
+            color: #11253D;
+        }
+        .title {
+            font-weight: 400;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .line {
+            padding: 6px 0;
+        }
+        .link {
+            padding-left: 6px;
+            font-size: 16px;
+            color: #FF0040;
+            text-decoration: none;
+        }
+        .link:visited {
+            color: #FF80A0;
+        }
+    </style>
 </head>
 <body>
-
+    <main>
+        <h2 class="title">All</h2>
+        <div class="links">
+            <span class="line">–<a class="link" href="https://evstrv.github.io/labirint-task">labirint-task</a></span>
+        </div>
+    </main>
 </body>
 </html>
