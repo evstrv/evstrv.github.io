@@ -10,9 +10,6 @@
   }
 }
 @media (max-width: 1500px) {
-  .content-left__item--medium {
-    max-width: unset;
-  }
   .content-left__select {
     flex-direction: column;
   }
@@ -25,9 +22,6 @@
   .content-left__wrap-data {
     flex-direction: column;
     align-items: flex-start;
-  }
-  .content-left__item--medium {
-    max-width: unset;
   }
   .content-left__list {
     margin-bottom: 12px;

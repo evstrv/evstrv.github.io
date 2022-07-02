@@ -23,11 +23,11 @@
 
 @media (max-width: 1500px) {
   .content-left {
-    &__item {
-      &--medium {
-        max-width: unset;
-      }
-    }
+    // &__item {
+    //   &--medium {
+    //     max-width: unset;
+    //   }
+    // }
 
     &__select {
       flex-direction: column;
@@ -50,11 +50,11 @@
       align-items: flex-start;
     }
 
-    &__item {
-      &--medium {
-        max-width: unset;
-      }
-    }
+    // &__item {
+    //   &--medium {
+    //     max-width: unset;
+    //   }
+    // }
 
     &__list {
       margin-bottom: 12px;
