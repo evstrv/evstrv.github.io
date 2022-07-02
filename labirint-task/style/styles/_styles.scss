@@ -17,6 +17,18 @@ body {
   background-color: $color-bg;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url(../images/arrow.alt.down.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 6px;
+  border-radius: 2px;
+  margin-right: 2rem;
+}
+
 @mixin listReset {
   margin: 0;
   padding: 0;
@@ -309,7 +321,6 @@ body {
       border-radius: 4px;
       overflow: hidden;
 
-      background-image: url(../images/arrow.alt.down.svg);
       background-position: right 19px top 32px;
       background-size: 14px 7px;
       background-repeat: no-repeat;
@@ -337,12 +348,13 @@ body {
 
     &-choice {
       position: relative;
-      width: 1000px;
+      width: 100%;
       padding-right: 10px;
       font-family: 'PTRootUI', sans-serif;
       font-weight: 700;
       border: none;
-      background: transparent;
+      white-space: nowrap;
+      text-overflow: ellipsis;
 
       &:focus-visible {
         outline: none;
@@ -397,7 +409,6 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
-  // height: 119px;
   width: 100%;
   border-top: 1px solid $border;
   background-color: #F2F2F2;
