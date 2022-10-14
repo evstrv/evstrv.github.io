@@ -1,0 +1,8 @@
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+    .money-economy-image{
+		width: 500px;
+		height: 348px;
+		text-align: center;
+	}
+}
